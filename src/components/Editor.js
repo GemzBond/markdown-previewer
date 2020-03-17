@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Previewer from './Previewer'
 
 class Editor extends Component {
   constructor() {
@@ -20,7 +21,9 @@ class Editor extends Component {
       <div class="form-group">
         <label className="font-weight-bold mt-5">Editor</label>
         <textarea class="form-control" rows="10" onChange={this.handleChange} value={this.state.markdown}></textarea>
+        <Previewer text={this.state.markdown} />
       </div>
+      
     )
   }
 }

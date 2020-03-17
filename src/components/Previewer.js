@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Previewer() {
+function Previewer(props) {
   return (
     <div>
       <label className="font-weight-bold mt-5">Previewer</label>
-      <h1>Raw data</h1>
+      <p>{props.text}</p>
     </div>
   )
 }
