@@ -58,14 +58,16 @@ class App extends React.Component {
     
     return (
       <div className="container">
+       
+
         <div class="form-group mt-5" id="editor">
-          <h3 className="text-center">Editor</h3>
+          <h3 className="text-center text-dark">Editor</h3>
           <textarea type="text" class="form-control" rows="15" onChange={this.handleSubmit} value={this.state.marked} />
         </div>
 
-        <div id="preview" >
-          <h3 className="text-center mt-5">Preview</h3>
-          <div className="border rounded p-3" dangerouslySetInnerHTML={{ __html: Marked(this.state.marked)}}>
+        <div id="preview ">
+          <h3 className="text-center mt-5 text-dark">Preview</h3>
+          <div className="border rounded p-3 mb-5 bg-light" dangerouslySetInnerHTML={{ __html: Marked(this.state.marked)}}>
           </div>
         </div>
       </div>
